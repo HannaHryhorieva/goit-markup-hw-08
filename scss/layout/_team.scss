@@ -1,0 +1,58 @@
+.team {
+  background-color: $additional-background-color;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &-title {
+    font-size: 36px;
+    line-height: 1.67;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  &-list {
+    display: flex;
+    margin: 50px 0 0 0;
+    padding: 0;
+  }
+  &-card {
+    background-color: $main-background-color;
+    margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &-list &-card:last-child {
+    margin-right: 0;
+  }
+  &-item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin: 30px 0 0;
+    padding: 0;
+  }
+  &-text {
+    color: $second-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin: 10px 0 16px;
+    padding: 0;
+  }
+}
+.social-link-list-bottom {
+  margin: 0 0 30px;
+}
+.social-link-card {
+  background-color: $main-background-color;
+  fill: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: $accent-color;
+  fill: $inverse-color;
+}

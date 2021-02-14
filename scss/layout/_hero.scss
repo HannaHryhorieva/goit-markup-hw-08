@@ -1,0 +1,47 @@
+.hero {
+  color: $inverse-color;
+
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bgimg.jpg);
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $hero-background-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  letter-spacing: 0.06em;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  &-cont {
+    width: 600px;
+    margin: 0 auto;
+  }
+  &-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
+  &-button {
+    color: $inverse-color;
+    background-color: $accent-color;
+    font-family: inherit;
+    font-weight: $main-fontW;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    padding: 10px 32px;
+    border-radius: 4px;
+    margin: 30px 0 0 0;
+    cursor: pointer;
+  }
+}

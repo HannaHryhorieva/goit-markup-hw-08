@@ -1,0 +1,14 @@
+body {
+  color: $main-color;
+  font-family: $main-font;
+  font-weight: $main-fontW;
+  letter-spacing: $font-lett-spc;
+}
+li {
+  list-style-type: none;
+}
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
