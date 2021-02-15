@@ -1,7 +1,11 @@
 .work {
+  display: none;
   background-color: $main-background-color;
   padding-top: 94px;
   padding-bottom: 94px;
+  @media screen and(min-width:$desktop) {
+    display: block;
+  }
   &-title {
     font-size: 36px;
     line-height: 1.67;

@@ -1,31 +1,54 @@
 .advantage {
   background-color: $main-background-color;
-  padding-top: 94px;
+  padding-top: 60px;
+  @media screen and(min-width:$tablet) {
+    padding-top: 94px;
+  }
   &-list {
-    display: flex;
     margin: 0;
     padding: 0;
+    @media screen and(min-width:$tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+    @media screen and(min-width:$desktop) {
+      flex-wrap: nowrap;
+    }
   }
   &-item {
-    margin: 0 30px 0 0;
+    @media screen and(min-width:$tablet) {
+      width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
+    @media screen and(min-width:$desktop) {
+      width: calc((100% - 4 * 30px) / 4);
+    }
   }
-  &-list &-item:last-child {
-    margin-right: 0;
+  &-item:not(:last-child) {
+    @media screen and(max-width:767px) {
+      margin-bottom: 30px;
+    }
   }
+
   &-title {
+    padding: 0;
+    margin: 0 0 10px 0;
+    text-align: center;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    padding: 0;
-    margin: 0 0 10px 0;
+    @media screen and(min-width:$tablet) {
+      text-align: left;
+    }
   }
   &-text {
+    padding: 0;
+    margin: 0;
     color: $second-color;
     font-size: 14px;
     line-height: 1.71;
     font-weight: 400;
-    padding: 0;
-    margin: 0;
   }
 }
 .svg-cont {
