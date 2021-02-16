@@ -257,25 +257,53 @@ li {
 .footer-logo {
   color: #ffffff;
 }
-.footer-cont {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .footer-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-cont {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 .footer-title {
   color: #ffffff;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  text-align: start;
+  text-align: center;
   margin: 0 0 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-title {
+    text-align: start;
+  }
 }
 
 .adress-logo {
-  margin: 0;
+  margin: 0 auto 60px auto;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .adress-logo {
+    margin: 0 0 60px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .adress-logo {
+    text-align: start;
+  }
 }
 .adress-list {
   margin: 20px 0 0 0;
@@ -303,7 +331,17 @@ li {
 }
 
 .footer-social {
-  padding-top: 12px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer-social {
+    padding-top: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    margin-bottom: 0;
+  }
 }
 .footer-social-list {
   margin: 0;
@@ -319,7 +357,12 @@ li {
 }
 
 .subscribe {
-  padding: 12px 0 0 0;
+  padding: 0;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    padding: 12px 0 0 0;
+  }
 }
 .subscribe-text {
   font-family: inherit;
@@ -331,19 +374,21 @@ li {
   margin: 0 10px 0 0;
 }
 
-.form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .email {
   display: block;
 }
 .email-input {
-  width: 358px;
+  width: 100%;
   height: 50px;
-  margin: 0 12px 0 0;
+  margin: 0 0 20px 0;
   padding-left: 16px;
   color: #ffffff;
   font-weight: 400;
@@ -355,6 +400,17 @@ li {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .email-input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .email-input {
+    width: 358px;
+    margin: 0 12px 0 0;
+  }
 }
 .email-input:focus {
   background-color: #2f303a;
@@ -381,7 +437,7 @@ li {
   border: 0;
   padding: 10px 28px;
   border-radius: 4px;
-  margin: 0;
+  margin: 0 auto;
   cursor: pointer;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
